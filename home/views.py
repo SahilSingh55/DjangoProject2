@@ -114,6 +114,9 @@ def blog(request):
 
     return render(request,"blog.html", {'dests' : dests})
 
+def services(request):
+    return render(request,"services.html")
+
 @login_required(login_url='login')
 def contact(request):
     if request.method == "POST":
